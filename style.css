@@ -27,13 +27,16 @@ header{
 .list{
     display: flex;
     flex-direction: row;
+    margin-top: 1.55px;
     border-radius: 30%;
-    padding: 9px 5px;
-    border: 30% white;
-    position: absolute;
+    padding: 5px 5px;
+    border: 40% white;
+    position:absolute;
     left: 0;
     top: auto;
-
+    box-sizing:border-box var(--primary-color);
+    box-shadow: #3e473f;
+    font-size: 3em;
 }
 a{
     text-decoration: none;
@@ -57,16 +60,16 @@ a{
 .search{
     background-color: transparent; 
     border: 2px solid var(--primary-color);
-    border-radius: 50px;
+    border-radius: 30px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+    padding: 0.7rem 0.7rem;
     color: white;
-
+    margin-right:0%;
 }
 
 .search::placeholder{
-    color: rgb(1, 2, 2);
+    color: whitesmokes;
 }
 
 .search:focus{
@@ -143,3 +146,26 @@ main{
 }
 
 
+.button {
+    background-color: var(--primary-color); 
+    border: 1px solid white;
+    border-radius: 15%;
+    color: cyan;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    font-size: 0.840rem;
+    position: relative;
+    margin: 2.5px;
+  }
+  
+  .button:active{
+      background-color: rgb(70, 79, 77);
+      transform: scale(0.98);
+  }
+  
+  .button:hover{
+      background-color:rgb(126, 113, 113);
+      transform: scale(0.98);
+  }
